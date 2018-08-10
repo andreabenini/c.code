@@ -1,4 +1,3 @@
-```
 // A C program that does not terminate when Ctrl+C is pressed
 #include <stdio.h>
 #include <signal.h>
@@ -18,4 +17,3 @@ int main () {
     }
     return 0;
 }
-```
