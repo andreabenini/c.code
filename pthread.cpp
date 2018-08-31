@@ -1,3 +1,6 @@
+// Basic thread usage
+//
+// linking flag is required. i.e. "g++ pthread.cpp -lpthread"
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
