@@ -49,6 +49,6 @@ int main() {
         std::cout << "Failed to join Thread : " << strerror(err) << std::endl;
         return err;
     }
-	std::cout << "Exiting Main" << std::endl;
-	return 0;
+    std::cout << "Exiting Main" << std::endl;
+    return 0;
 } /**/
