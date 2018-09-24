@@ -1,0 +1,1 @@
+- Posix threads programming, a really nice guide: https://computing.llnl.gov/tutorials/pthreads/
