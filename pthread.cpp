@@ -9,6 +9,7 @@
 #include <unistd.h>
 
 // Get thread Id of calling thread
+// if this is a class method it must be declared static
 void * threadFunc(void * arg) {
     pthread_t thId = pthread_self();
     std::cout << "Thread Id from thread function : " << thId << std::endl;
@@ -26,7 +27,7 @@ int main() {
 
     // Create a thread that will call function threadFunc() as thread function. Also
     // pass the pointer to thread id object. This API will set the thread id in this passed argument.
-    int err = pthread_create(&threadId, NULL, &threadFunc, NULL);
+    int err = pthread_create(&threadId, NULL, threadFunc, NULL);
     // Check if thread is created sucessfully
     if (err) {
         std::cout << "Thread creation failed : " << strerror(err);
